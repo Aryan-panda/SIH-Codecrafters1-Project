@@ -13,7 +13,7 @@ app = FaceAnalysis(name='buffalo_l')  # You can try 'buffalo_m' or 'buffalo_s' f
 app.prepare(ctx_id=0)  # Set to -1 for CPU, 0 for GPU
 
 # Load reference image (known person)
-ref_img = cv2.imread("Tanmay1.jpeg")  # Replace with your reference image path
+ref_img = cv2.imread("samples/sample_tanmay_1.jpeg")  # Replace with your reference image path
 ref_faces = app.get(ref_img)
 
 if len(ref_faces) == 0:

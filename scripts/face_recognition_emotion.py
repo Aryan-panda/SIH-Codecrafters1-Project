@@ -14,7 +14,7 @@ app = FaceAnalysis(name='buffalo_l')
 app.prepare(ctx_id=0, det_size=(640, 640))  # ctx_id=0 for GPU, -1 for CPU
 
 # Load known faces
-known_faces_dir = 'known_faces'
+known_faces_dir = 'data/known_faces'
 known_embeddings = []
 known_names = []
 

@@ -12,8 +12,8 @@ app = FaceAnalysis(name='buffalo_l')  # uses a default model
 app.prepare(ctx_id=0)  # use 0 for GPU, -1 for CPU
 
 # Load and process two images
-img1 = cv2.imread("Tanmay1.jpeg")
-img2 = cv2.imread("Tanmay2.jpeg")
+img1 = cv2.imread("samples/sample_tanmay_1.jpeg")
+img2 = cv2.imread("samples/sample_tanmay_2.jpeg")
 
 # Detect faces and get embeddings
 faces1 = app.get(img1)
